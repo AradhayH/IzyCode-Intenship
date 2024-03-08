@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <div class="calculator-box">
+            <div class="calculator">
+                <div id="answerbox">
+
+                </div>
+                <div class="buttonarea">
+                    <button onclick="cleardisplay()">AC</button>
+                    <button onclick="appendopenbrac()">(</button>
+                    <button onclick="appendclosebrac()">)</button>
+                    <button onclick="appendnumber('/')">/</button>
+                </div>
+                <div class="buttonarea">
+                    <button onclick="appendnumber('7')">7</button>
+                    <button onclick="appendnumber('8')">8</button>
+                    <button onclick="appendnumber('9')">9</button>
+                    <button onclick="appendnumber('*')">X</button>
+                </div>
+                <div class="buttonarea">
+                    <button onclick="appendnumber('4')">4</button>
+                    <button onclick="appendnumber('5')">5</button>
+                    <button onclick="appendnumber('6')">6</button>
+                    <button onclick="appendnumber('-')">-</button>
+                </div>
+                <div class="buttonarea">
+                    <button onclick="appendnumber('1')" >1</button>
+                    <button onclick="appendnumber('2')">2</button>
+                    <button onclick="appendnumber('3')">3</button>
+                    <button onclick="appendnumber('+')">+</button>
+                </div>
+                <div class="buttonarea">
+                    <button onclick="dellast()">DEL</button>
+                    <button onclick="appendnumber('0')">0</button>
+                    <button onclick="appendnumber('.')">.</button>
+                    <button onclick="result()">=</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
