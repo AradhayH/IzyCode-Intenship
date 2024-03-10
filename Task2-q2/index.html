@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather using API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="main">
+        <h1 class="header">Find details about any city</h1>
+        <video autoplay muted loop src="video.mp4" class="bg-video"></video>
+        <div class="weatherbox">
+            <h2>Enter City</h2>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()" class="button">Get details</button>
+            <p id="location"></p>
+            <p id="lat"></p>
+            <p id="lon"></p>
+            <div id="weather-icon"></div>
+            <p id="weather-description"></p>
+            <p id="temperatureinc"></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

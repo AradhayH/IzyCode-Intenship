@@ -1,0 +1,41 @@
+body{
+    background-color: beige;
+}
+.searchbox{
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#user-input{
+    width: 500px;
+    height: 30px;
+    margin: 15px;
+    border: 2px solid black;
+    background-color: rgb(166, 209, 214);
+    border-radius: 5px;
+    padding: 5px;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: rgb(166, 209, 214);
+    padding: 5px;
+    border: 2px solid black;
+
+}
+#user-input:focus{
+    outline: none;
+}
+#qrcode-container{
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    
+}
