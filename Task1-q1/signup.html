@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="photos\favicon\favicon.ico">
+    </head>
+    <style>
+         body
+    {
+        background-size: cover;
+    }
+    .signinna {
+      background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        border-color: black;
+        border-width: 1px;
+        border-style: groove;
+        padding-bottom: 20px;
+        box-shadow: 5px 10px 8px rgb(107, 99, 99);
+        opacity: 0.9;
+        background-color: #ecfafb;
+      }
+      h1,p {
+        text-align: center;
+      }
+      input[type="button"]:hover
+    {
+          
+      color:white;
+    }
+    #cont{
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: 750px;
+  z-index: -5;
+}
+.bubbles{
+  position: relative;
+  display: flex;z-index: -5;
+}
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #A084E8;
+  margin: 0 4px;
+  border-radius:  50%;
+  box-shadow: 0 0 0 10px #A084E844,
+  0 0 50px #A084E8,
+  0 0 100px #A084E8;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(100s/var(--i));
+  z-index: -5;
+}
+.bubbles span:nth-child(even)
+{
+  background: #A7EDE7;
+  box-shadow: 0 0 0 10px #A7EDE744,
+  0 0 50px #A7EDE7,
+  0 0 100px #A7EDE7;
+  z-index: -5;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(100vh) scale(0);
+  }
+  100%
+  {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="cont">
+      <div class="bubbles">
+          <span style="--i:11;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:13;"></span>
+          <span style="--i:12;"></span>
+          <span style="--i:24;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:21;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:15;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:20;"></span>
+          <span style="--i:11;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:13;"></span>
+          <span style="--i:12;"></span>
+          <span style="--i:24;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:21;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:18;"></span>
+          <span style="--i:15;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:20;"></span>
+          <span style="--i:11;"></span>
+          <span style="--i:14;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:13;"></span>
+          <span style="--i:12;"></span>
+          <span style="--i:24;"></span>
+          <span style="--i:36;"></span>
+          <span style="--i:23;"></span>
+          <span style="--i:31;"></span>
+
+ 
+      </div>
+  </div>
+    <div class="signinna">
+      <h1>SIGN UP</h1>
+      <form action="login.html">
+        <p>
+          <label>Username:*</label>
+          <input type="text" required />
+          <br /><br />
+          <label for="">Date of Birth:</label>
+          <input type="date" /><br /><br />
+          <label for="">Email address:*</label>
+          <input type="email" required /><br /><br />
+          <label for="">Password:* </label>
+          <input type="password" required>
+           <br>
+           <br>
+           <input type="button" value="Submit">
+        </p>
+        *required
+      </form>
+    </div>
+  </body>
+</html>
